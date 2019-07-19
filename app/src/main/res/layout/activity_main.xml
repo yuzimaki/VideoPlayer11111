@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.bytedance.videoplayer.VideoPlayerijk
+            android:id="@+id/ijkPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </com.bytedance.videoplayer.VideoPlayerijk>
+
+
+        <Button
+            android:id="@+id/buttonFull"
+            android:layout_width="65dp"
+            android:layout_height="37dp"
+            android:text="全屏"
+            app:layout_constraintBottom_toBottomOf="@+id/ijkPlayer"
+            app:layout_constraintEnd_toEndOf="@+id/ijkPlayer"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/ijkPlayer"
+            app:layout_constraintTop_toTopOf="@+id/ijkPlayer"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放"/>
+
+
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停" />
+
+
+</LinearLayout>
